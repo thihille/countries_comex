@@ -1,0 +1,13 @@
+<app-header></app-header>
+<div id="app-default">
+  <app-sidebar class="app-sidebar" (getRegion)="receiverRegion($event)"></app-sidebar>
+  <div id="content">
+    <app-loading *ngIf="loading"></app-loading>
+    <h2 *ngIf="!loading">Mostrando os {{ titleResults }}</h2>
+    <ul class="list-countries" *ngIf="!loading">
+      <li *ngFor="let country of countries" [routerLink]="'/country/'+country.alpha3Code.toLowerCase()">
+        <app-card image={{country.flag}} title={{country.translations.br}} capital={{country.capital}}></app-card>
+      </li>
+    </ul>
+  </div>
+</div>

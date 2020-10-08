@@ -1,0 +1,44 @@
+<app-header [region]="this.codeCountry"></app-header>
+<section class="detail">
+  <div class="description">
+    <h3>{{ countryDetail.translations.br }} ({{ countryDetail.alpha3Code }})</h3>
+    <h5><i>{{ countryDetail.name }}</i></h5>
+    <hr>
+    <p>Área total</p>
+    <h5>{{ valueArea }} Km<sup>2</sup></h5>
+    <!-- <p>Paises ao redor do Brasil</p> -->
+    <!-- <h5>FAZER UM FOR de paises</h5> -->
+    <p>População</p>
+    <h5>{{ valuePopulation }}</h5>
+    
+    <p>Região que se encontra:</p>
+    <h5>{{ countryDetail.region }} | {{ countryDetail.subregion }}</h5>
+  </div>
+  <div class="country-flag">
+    <img [src]="countryDetail.flag" [alt]="'bandeira - '+countryDetail.name" />
+  </div>
+</section>
+<section class="same-countries-languages">
+  <h3>Países que utilizam do mesmo idioma</h3>
+  <div *ngFor="let lang of countriesByLanguages">
+    <h5>{{ lang.language.nativeName }} ({{ lang.language.name }})</h5>
+    <ul>
+      <li *ngFor="let item of lang.results" [routerLink]="'/country/'+item.alpha3Code.toLowerCase()">
+        <img [src]="item.flag" [alt]="'bandeira - '+item.name" />
+        <p>{{ item.translations.br }}</p>
+      </li>
+    </ul>
+  </div>
+</section>
+<section class="same-countries-currencies">
+  <h3>Países que utilizam da mesma moeda</h3>
+  <div *ngFor="let curr of countriesByCurrency">
+    <h5>{{ curr.currency.name }} - {{ curr.currency.symbol }}</h5>
+    <ul>
+      <li *ngFor="let item of curr.results" [routerLink]="'/country/'+item.alpha3Code.toLowerCase()">
+        <img [src]="item.flag" [alt]="'bandeira - '+item.name" width="100" />
+        <p>{{ item.translations.br }}</p>
+      </li>
+    </ul>
+  </div>
+</section>

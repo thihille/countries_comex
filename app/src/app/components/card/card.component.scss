@@ -1,0 +1,46 @@
+div.card {
+  text-align: center;
+  display: flex;
+  align-items: stretch;
+  justify-content: stretch;
+  flex-direction: column;
+  padding: 5px;
+  border: 2px solid rgb(241, 236, 197);
+  box-sizing: border-box;
+  border-radius: 9px;
+  transition: background-color .2s ease, border-color .2s ease;
+  cursor: pointer;
+  background-color: rgb(255, 254, 247);
+
+  &:hover {
+    background-color:rgb(241, 236, 197);
+    border: 2px solid rgb(218, 212, 168);
+  }
+
+  div.flag {
+    display: flex;
+    align-items: center;
+    height: 200px;
+    justify-content: center;
+
+    img {
+      display: block;
+      width: 250px;
+      max-height: 190px;
+      border-radius: 6px;
+    }
+  }
+  
+  h3 {
+    margin: 0;
+    padding: 0;
+    font-size: .9em;
+  }
+
+  h5 {
+    margin: 0;
+    padding: 0;
+    font-size: .9em;
+  }
+  
+}

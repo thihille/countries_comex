@@ -1,0 +1,41 @@
+aside {
+  position: relative;
+  background: rgb(255, 254, 247);
+  min-height: 100vh;
+  height: 100%;
+  width: 160px;
+  box-sizing: border-box;
+  border-right: 2px solid rgb(241, 236, 197);
+  margin-right: 10px;
+  padding-top: 30px;
+
+  button {
+    width: 100%;
+    border: none;
+    background-color: transparent;
+  }
+
+  section {
+    display: block;
+    margin: 0;
+
+    h4 {
+      padding-left: 10px;
+      margin: 0;
+      color: goldenrod;
+    }
+
+    form {
+      padding: 10px 20px;
+
+      input[type=radio]{
+        margin-top: 15px;
+      }
+
+      label {
+        font-weight: bold;
+        color: goldenrod;
+      }
+    }
+  }
+}

@@ -1,0 +1,28 @@
+$tablet-width: 768px;
+$desktop-width: 1280px;
+
+@mixin mobile {
+  @media (min-width: 0px) and (max-width: #{$tablet-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}
+
+.app-countries {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: stretch;
+  height: 100vh;
+}

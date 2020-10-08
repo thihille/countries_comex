@@ -1,0 +1,88 @@
+@import "../../app.component.scss";
+header {
+  width: calc(100% - 10px);
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 5px;
+  background: #fcfcfc;
+
+  svg {
+    width: 20%;
+
+    fill: #0a0036;
+
+    .default {
+      fill: #0a0036;
+    }
+
+    .second-default {
+      fill: #0a0036;
+    }
+
+    .bra {
+      fill: rgb(26, 14, 90);
+    }
+    .second-bra {
+      fill: rgb(41, 65, 197);
+    }
+    .arg {
+      fill: rgb(116, 172, 223);
+    }
+    .second-arg {
+      fill: rgb(206, 209, 27);
+    }
+    .prt {
+      fill: rgb(30, 73, 41);
+    }
+    .second-prt {
+      fill: rgb(209, 27, 27);
+    }
+    .deu {
+      fill: rgb(0, 0, 0);
+    }
+    .second-deu {
+      fill: rgb(209, 27, 27);
+    }
+    .usa {
+      fill: rgb(9, 7, 151);
+    }
+    .second-usa {
+      fill: rgb(209, 27, 27);
+    }
+  }
+
+  button {
+    font-size: 1em;
+    font-weight: bold;
+    border: none;
+    background-color: #eee;
+    padding: 0 10px;
+    margin-right: 10px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #ccc;
+    }
+  }
+}
+
+@include mobile {
+  header {
+    svg {
+      width: 200px;
+    }
+    button {
+      font-size: .8em;
+    }
+  }
+}
+@include tablet {
+  header {
+    svg {
+      width: 300px;
+    }
+    button {
+      font-size: .8em;
+    }
+  }
+}

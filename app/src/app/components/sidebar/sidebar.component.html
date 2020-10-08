@@ -1,0 +1,19 @@
+<aside>
+  <section class="filter-country">
+    <h4>Filtrar por região</h4>
+    <form class="group">
+      <input type="radio" id="all" name="region" value="all" [ngModel]="country.region" (change)="handleChange($event.target.value)">
+      <label for="all">Tudo</label><br>
+      <input type="radio" id="africa" name="region" value="region/africa" [ngModel]="country.region" (change)="handleChange($event.target.value)">
+      <label for="africa">Africa</label><br>
+      <input type="radio" id="americas" name="region" value="region/americas" [ngModel]="country.region" (change)="handleChange($event.target.value)">
+      <label for="americas">Americas</label><br>
+      <input type="radio" id="asia" name="region" value="region/asia" [ngModel]="country.region" (change)="handleChange($event.target.value)">
+      <label for="asia">Asia</label><br>
+      <input type="radio" id="europe" name="region" value="region/europe" [ngModel]="country.region" (change)="handleChange($event.target.value)">
+      <label for="europe">Europa</label><br>
+      <input type="radio" id="oceania" name="region" value="region/oceania" [ngModel]="country.region" (change)="handleChange($event.target.value)">
+      <label for="oceania">Oceania</label><br>
+    </form>
+  </section>
+</aside>
