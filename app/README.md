@@ -17,7 +17,7 @@ ng serve
 ```
 A aplicação vai ser carregada no endereço `http://localhost:4200/`
 
-## Acesse o projeto
+## Acesse o teste
 
 Para visualizar o teste, acesse [aqui]
 

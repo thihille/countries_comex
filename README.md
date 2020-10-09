@@ -16,7 +16,7 @@ Realizei a criação do logotipo vetorizado em Illustrator, peguei a imagem no g
 
 Acesse a pasta app logo acima e leia também o `README` deste diretório para realizar a instalação da aplicação.
 
-## Acesse o projeto
+## Acesse o teste
 
 Para visualizar o teste, acesse [aqui]
 
