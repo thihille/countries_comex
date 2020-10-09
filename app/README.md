@@ -17,4 +17,10 @@ ng serve
 ```
 A aplicação vai ser carregada no endereço `http://localhost:4200/`
 
+## Acesse o projeto
+
+Para visualizar o teste, acesse [aqui]
+
+[aqui]: https://silly-goldstine-d34761.netlify.app/country/alb
+
 Enjoy ;)
