@@ -21,6 +21,6 @@ A aplicação vai ser carregada no endereço `http://localhost:4200/`
 
 Para visualizar o teste, acesse [aqui]
 
-[aqui]: https://silly-goldstine-d34761.netlify.app/country/alb
+[aqui]: https://silly-goldstine-d34761.netlify.app/
 
 Enjoy ;)
