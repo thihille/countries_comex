@@ -16,4 +16,10 @@ Realizei a criação do logotipo vetorizado em Illustrator, peguei a imagem no g
 
 Acesse a pasta app logo acima e leia também o `README` deste diretório para realizar a instalação da aplicação.
 
+## Acesse o projeto
+
+Para visualizar o teste, acesse [aqui]
+
+[aqui]: https://silly-goldstine-d34761.netlify.app/
+
 Enjoy ;)
